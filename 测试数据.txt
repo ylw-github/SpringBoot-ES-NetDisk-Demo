@@ -1,0 +1,156 @@
+DELETE /clouddisk
+
+PUT /clouddisk
+
+POST /clouddisk/_mapping/disk
+{
+  "disk":{
+    "properties":{
+       "name":{
+         "type":"text",
+         "analyzer":"ik_smart",
+         "search_analyzer":"ik_smart"
+       },
+       "source":{
+         "type":"keyword"
+       },
+      "describe":{
+         "type":"text",
+         "analyzer":"ik_smart",
+         "search_analyzer":"ik_smart"
+       },
+       "shartime":{
+         "type":"date"
+       },
+       "browsetimes":{
+         "type":"long"
+       },
+      "filesize":{
+         "type":"float"
+       },
+      "sharpeople":{
+         "type":"keyword"
+       },
+       "collectiontime":{
+         "type":"date"
+       },
+        "baiduaddres":{
+         "type":"keyword"
+       }
+    }
+  }
+
+}
+
+
+POST /clouddisk/disk
+{
+	"name": "旋涡鸣人！拜见！",
+	"source": "火影忍者中文网",
+	"describe": "鸣人刚出场就让我们吓了一跳，伊鲁卡追着逃课的他满村子跑。好不容易抓住了鸣人，但是在变身的考核上，鸣人却变出了一个裸女，并美其名曰是色诱之术。他是一个十足的钓车尾，但是他一点都不讨人厌，尽管他不被认同，但是他不退缩，永不服输，爱吃拉面，爱恶搞，而这样的人，才是我们心中的鸣人，感动从这一刻开始了。",
+	"shartime": "2013-10-10",
+	"browsetimes": 987234,
+	"filesize": 1.2,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "我是木叶丸！",
+	"source": "火影忍者中文网",
+	"describe": "木叶村每一代的首领被称为“火影”，只有忍者中实力最强者才能拥有此殊荣。“猿飞”正是现在的第三代火影，他有个孙子叫做“木叶丸”。好不容易才从忍者学校毕业的鸣人刚从学校拿到忍者证书，就遇到了木叶丸。木叶丸开口就叫鸣人“老大”，而且一直跟随在鸣人身后。这是因为，只有鸣人没有把他当做“火影的孙子”来特别对待，而木叶丸的目标就是要成为受人尊敬的“火影”……",
+	"shartime": "2018-10-12",
+	"browsetimes": 129334,
+	"filesize": 0.8,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "宿敌！？佐助和小樱",
+	"source": "火影忍者中文网",
+	"describe": "鸣人终于成为忍者啦，因为任务需要，鸣人必须同另外两个人组成三人一组的小队。与他分到同组的是同班的“宇智波佐助”及“春野樱”。鸣人非常喜欢可爱的小樱，可是小樱却暗恋着佐助。更糟糕的是，比起鸣人，佐助不但... ",
+	"shartime": "2018-10-10",
+	"browsetimes": 1333122,
+	"filesize": 1.1,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "训练！生存演习",
+	"source": "火影忍者中文网",
+	"describe": "刚成立的第七组在教室里等待卡卡西的到来，可是迟到的卡卡西实在让人受不了，于是鸣人干脆借此机会设置一个小陷阱捉弄一下卡卡西。中计的卡卡西表示对三人的印象还挺差的，于是，在大家自我介绍完毕以后，卡卡西提出... ",
+	"shartime": "2018-10-10",
+	"browsetimes": 15121213,
+	"filesize": 1.35,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "丧失资格？卡卡西的结论",
+	"source": "火影忍者中文网",
+	"describe": "卡卡西安排的这场考试实在是太无情了，现如今在鸣人他们面前的卡卡西与之前的他判若两人。鸣人两三就被卡卡西撂倒了，连最强新人的佐助也无法招架卡卡西的进攻，无计可施的小樱只能到处躲藏。在上忍卡卡西的实力面前... ",
+	"shartime": "2018-10-10",
+	"browsetimes": 781222,
+	"filesize": 2.35,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "雾隐的暗杀者",
+	"source": "火影忍者中文网",
+	"describe": "终于抵达波之国的鸣人一行，了解到这个国家被一个叫“卡多”的奸商支配着。先前出现的劫道者是想要取达兹纳性命的刺客，而且得知下一个敌人将是被称为“沉默杀手”的“桃地再不斩”。鸣人正为意外出现的强敌而兴奋，... ",
+	"shartime": "2018-10-10",
+	"browsetimes": 2343444,
+	"filesize": 3.35,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "以疼痛为誓的决心",
+	"source": "火影忍者中文网",
+	"describe": "同再不斩发生争斗的卡卡西瞬间移动到再不斩的身后，用刀刃直指再不斩的喉结，卡卡西本以为这样就能封锁住再不斩的攻击，可是他想多了。卡卡西控制住的仅是再不斩的水分身，进攻失败的卡卡西被再不斩封在了“水牢”之... ",
+	"shartime": "2018-10-10",
+	"browsetimes": 44333322,
+	"filesize": 1.35,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
+
+POST /clouddisk/disk
+{
+	"name": "写轮眼卡卡西",
+	"source": "火影忍者中文网",
+	"describe": "鸣人和佐助的配合成功将水牢中的卡卡西解救出来，使卡卡西再次与再不斩交锋，卡卡西利用写轮眼的能力一瞬间将再不斩的“水遁大瀑布”复制过来并反击，之后再不斩的每一次行动以及忍术都被卡卡西预读。正在卡卡西准备... ",
+	"shartime": "2018-10-10",
+	"browsetimes": 626444232,
+	"filesize": 1.65,
+	"sharpeople": "ylw",
+	"collectiontime": "2019-12-19",
+	"baiduaddres": "https://yun.baidu.com/s/1bn8FvJL?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid="
+
+}
